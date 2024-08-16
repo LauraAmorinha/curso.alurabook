@@ -36,6 +36,6 @@
       }
       
 }
-.container__botao:checked ~ .lista-menu {
-    display: block;
+.container__botao {
+    display: none;
 }
