@@ -118,8 +118,31 @@ class="cabeçalho">
       <a href="#" class="botões__ancora">Saiba mais</a>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "vertical",
+    loop: true,
 
-</section>
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+</script>
+</section class="carrossel">
 
 <section class="tópicos">
   <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
@@ -155,7 +178,7 @@ class="cabeçalho">
   <input type="email" placeholder="Cadastre seu e-mail" class="contato__email"/>
 </section>
 
-<hr />
+<hr/>
 
 <footer class="rodapé">
   <h2 class="rodapé__titulo">Grupo Alura</h2>
